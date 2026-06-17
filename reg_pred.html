@@ -1,0 +1,95 @@
+<html> 
+<style>
+  #myTextBox1 { margin-left: 40px; }
+ </style> 
+<body> 
+    <h3>Insurance Prediction Form</h3> 
+
+<div> 
+  <form action="/result" method="POST"> 
+    
+    <br> 
+    <label for="age">age</label> 
+    <input type="text" id="myTextBox1" name="age"> 
+ 
+        
+    <br> 
+
+    <br> 
+    <label for="sex">sex</label> 
+    <select id="myTextBox1" name="sex"> 
+      <option value="0">Female</option> 
+      <option value="1">Male</option> 
+     
+    </select> 
+    <br> 
+
+    <br> 
+    <label for="bmi">bmi</label> 
+    <input type="number" id="myTextBox1" name="bmi" step="0.01"> 
+
+
+    <br> 
+
+    <br>
+
+    <label for="children">children</label> 
+    <select id="children" name="children"> 
+      <option value="0">0</option> 
+      <option value="1">1</option> 
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      
+    </select> 
+    <br> 
+    <br> 
+    <label for="smoker">smoker</label> 
+    <select id="smoker" name="smoker"> 
+      <option value="0">No</option> 
+      <option value="1">Yes</option> 
+      
+    </select> 
+    <br> 
+    <br> 
+    <label for="region_northwest">region_northwest</label> 
+    <select id="region_northwest" name="region_northwest"> 
+      <option value="0">No</option> 
+      <option value="1">Yes</option> 
+      
+    </select> 
+   
+    <br> 
+    <br> 
+<label for="region_southeast">region_southeast</label> 
+<select id="region_southeast" name="region_southeast"> 
+  <option value="0">No</option> 
+  <option value="1">Yes</option> 
+  
+</select> 
+
+<br> 
+<br> 
+ 
+<label for="region_southwest">region_southwest</label> 
+<select id="region_southwest" name="region_southwest"> 
+  <option value="0">No</option> 
+  <option value="1">Yes</option> 
+  
+</select> 
+<br> 
+<br> 
+
+
+    <input type="submit" value="Submit"> 
+  </form> 
+</div> 
+
+</div> 
+<div>
+       <h2>Result:</h2>
+       <p>{{ prediction }}</p>
+   </div>
+</body> 
+</html> 
